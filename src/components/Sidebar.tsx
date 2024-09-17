@@ -36,7 +36,7 @@ export default function Sidebar() {
   const itemSpacing = 8;
 
   return (
-    <div className="flex flex-col h-screen p-4 bg-[#28292E] text-white w-60">
+    <div className="flex flex-col h-screen p-4 bg-[#28292E] text-white w-64">
       {/* Logo Section with Arrow */}
       <div className="flex items-center justify-between mb-4 ">
         <div className="flex items-center">
