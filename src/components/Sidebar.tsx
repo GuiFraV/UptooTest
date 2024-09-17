@@ -49,7 +49,7 @@ export default function Sidebar() {
       </div>
 
       {/* User Info with Three Dots */}
-      <div className="flex items-center space-x-3 mb-3">
+      <div className="flex items-center justify-center space-x-3 mb-3 ">
         <Image
           src={Profil}
           alt="Avatar"
@@ -57,9 +57,9 @@ export default function Sidebar() {
           height={45}
           className="rounded-full"
         />
-        <div className="flex items-center justify-between w-full">
+        <div className="flex items-center justify-between w-full ">
           <div>
-            <p className="font-semibold">Rémy Dubois</p>
+            <p className="font-roboto mt-2">Rémy Dubois</p>
           </div>
           <UserDropdownMenu
             onProfile={handleProfile}
@@ -76,7 +76,9 @@ export default function Sidebar() {
 
       {/* Mon Espace Section */}
       <div className="mb-6">
-        <p className="text-[#aeb9cf] text-xs mb-2 font-bold">MON ESPACE</p>
+        <p className="text-[#aeb9cf] text-[14px] mb-2 font-robot tracking-wide">
+          MON ESPACE
+        </p>
         <div className="relative">
           {/* Fond mobile */}
           <span
@@ -113,7 +115,9 @@ export default function Sidebar() {
 
       {/* Mes Produits Section */}
       <div className="mb-6">
-        <p className="text-[#aeb9cf] text-xs mb-2 font-bold">MES PRODUITS</p>
+        <p className="text-[#aeb9cf] text-[14px] mb-2 font-robot tracking-wide">
+          MES PRODUITS
+        </p>
         <ul className="space-y-2">
           <li>
             <a

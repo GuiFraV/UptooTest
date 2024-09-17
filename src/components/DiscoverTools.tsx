@@ -4,11 +4,11 @@ import Image from "next/image";
 
 export default function DiscoverTools() {
   return (
-    <div className="w-full max-w-4xl p-6 bg-white rounded-3xl shadow-lg">
+    <div className="w-full max-w-4xl p-6 bg-white rounded-3xl mb-8 px-8">
       <h2 className="text-2xl font-bold mb-6">
         Découvrez vos outils pour gagner des points de croissance
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center">
         {[
           {
             title: "Scan",
@@ -27,25 +27,25 @@ export default function DiscoverTools() {
         ].map((tool, index) => (
           <Card
             key={index}
-            className="relative overflow-visible rounded-2xl border-0 shadow-md"
+            className="relative overflow-visible rounded-2xl border p-4 w-full"
           >
             <CardContent className="p-6">
               <div className="flex justify-between items-start mb-2">
-                <span className="text-xs text-blue-600 bg-blue-100 px-2 py-1 rounded-full">
+                <span className="text-xs text-blue-600 bg-blue-100 px-2 py-1 rounded-sm font-roboto font-semibold tracking-wide">
                   {tool.label}
                 </span>
               </div>
               <h3 className="text-2xl font-bold mb-2">{tool.title}</h3>
               <p className="text-sm mb-6">{tool.description}</p>
-              <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-full py-3">
+              <Button className="w-full bg-[#096bfa] hover:bg-blue-700 text-white rounded-lg py-3">
                 Évaluer mes commerciaux
               </Button>
-              <div className="absolute bottom-4 left-64 z-10 w-64 h-64">
+              <div className="absolute -top-5 -right-1 z-10">
                 <Image
                   src={tool.icon}
                   alt={tool.title}
-                  width={158}
-                  height={158}
+                  width={190}
+                  height={190}
                   className=""
                 />
               </div>

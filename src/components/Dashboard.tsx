@@ -5,7 +5,7 @@ import StudiesSection from "./StudiesSection";
 
 const Dashboard = () => {
   return (
-    <div className="flex flex-col md:flex-row md:space-x-6 border border-red-600 h-full">
+    <div className="flex flex-col md:flex-row md:space-x-6 h-full p-9">
       {/* Colonne de gauche */}
       <div className="md:w-1/3">
         <UserProjects />

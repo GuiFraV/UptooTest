@@ -9,10 +9,12 @@ export default function ThemeToggle() {
   };
 
   return (
-    <div className="flex flex-col space-y-2">
-      <p className="text-[#aeb9cf] font-bold text-xs mb-2">THÈME</p>
+    <div className="flex flex-col w-44">
+      <p className="text-[#aeb9cf] text-[14px] mb-2 font-robot tracking-wide">
+        THÈME
+      </p>
       <div
-        className="relative flex items-center bg-gray-800 rounded-full w-40 h-7 cursor-pointer"
+        className="relative flex items-center bg-gray-800 rounded-full w-full h-7 cursor-pointer"
         onClick={toggleTheme}
       >
         {/* Background Toggle */}
