@@ -36,7 +36,7 @@ export default function DiscoverTools() {
                 </span>
               </div>
               <h3 className="text-2xl font-bold mb-2">{tool.title}</h3>
-              <p className="text-sm mb-6">{tool.description}</p>
+              <p className="text-sm mb-6 mt-6">{tool.description}</p>
               <Button className="flex justify-center items-center w-full sm:w-32 md:w-full lg:text-sm bg-[#096bfa] hover:bg-blue-700 text-white rounded-lg">
                 Évaluer mes commerciaux
               </Button>
