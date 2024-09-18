@@ -1,12 +1,17 @@
-import { useState } from "react";
 import { FiSun, FiMoon } from "react-icons/fi";
+import { useTheme } from "@/contexts/ThemeContext";
+import { useEffect } from "react";
 
 export default function ThemeToggle() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const { isDarkMode, toggleTheme } = useTheme();
 
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-  };
+  useEffect(() => {
+    if (isDarkMode) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  }, [isDarkMode]);
 
   return (
     <div className="flex flex-col w-44">

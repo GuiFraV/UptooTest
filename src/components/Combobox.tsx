@@ -58,10 +58,12 @@ export function ComboboxComponent() {
           className="w-full bg-[#3e424f] justify-between"
         >
           <Image width={40} height={40} src={Tacos} alt="emoticone tacos" />
-          {value
-            ? frameworks.find((framework) => framework.value === value)?.label
-            : "Nom du workspace"}
-          <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0" />
+          <span className="combobox-text">
+            {value
+              ? frameworks.find((framework) => framework.value === value)?.label
+              : "Nom du workspace"}
+          </span>
+          <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 combobox-text" />
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-[200px] p-0">

@@ -30,7 +30,7 @@ export default function StudiesSection() {
     <div className="w-full max-w-6xl p-6 rounded-3xl h-4/6">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-xl font-semibold">Études</h2>
-        <Button variant="link" className="text-black">
+        <Button variant="link" className="text-black dark:text-white">
           Tout voir &gt;
         </Button>
       </div>

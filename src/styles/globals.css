@@ -7,11 +7,14 @@
   .text-balance {
     text-wrap: balance;
   }
+  .bg-dark-background {
+    @apply bg-[#28292e];
+  }
 }
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: #f6f7f9;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -38,10 +41,12 @@
     --radius: 0.5rem;
   }
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: #28292e;
+    --text-dark-mode: #e5e7eb;
     --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
+    --card: #28292e;
     --card-foreground: 210 40% 98%;
+    --card-dark-background: #4b5563;
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
     --primary: 210 40% 98%;
@@ -62,6 +67,21 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+  }
+}
+
+@layer components {
+  .combobox-text {
+    color: #ffffff;
+  }
+  .card {
+    @apply bg-white;
+  }
+  .dark .card {
+    background-color: var(--card-dark-background);
+  }
+  .dark .text-dark-mode {
+    color: var(--text-dark-mode);
   }
 }
 

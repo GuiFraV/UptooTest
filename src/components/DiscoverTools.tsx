@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function DiscoverTools() {
   return (
-    <div className="w-full max-w-4xl p-6 bg-white rounded-3xl mb-8 px-8">
+    <div className="w-full max-w-4xl p-6 bg-white rounded-3xl mb-8 px-8 card">
       <h2 className="text-2xl font-bold mb-6">
         Découvrez vos outils pour gagner des points de croissance
       </h2>
@@ -27,7 +27,7 @@ export default function DiscoverTools() {
         ].map((tool, index) => (
           <Card
             key={index}
-            className="relative overflow-visible rounded-2xl border p-4 w-full"
+            className="relative overflow-visible rounded-2xl border p-4 w-full dark:border-0 dark:bg-[#1f2937]"
           >
             <CardContent className="p-6">
               <div className="flex justify-between items-start mb-2">

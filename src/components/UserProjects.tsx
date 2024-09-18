@@ -1,13 +1,21 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, Calendar } from "lucide-react";
+import { useTheme } from "@/contexts/ThemeContext";
 
 export default function UserProjects() {
+  const { isDarkMode } = useTheme();
   return (
     <div className="w-full max-w-[23rem] space-y-4 h-full ">
-      <Card className="bg-white mb-8">
+      <Card className="bg-white mb-8 card">
         <CardContent className="p-6 w-5/6">
-          <h2 className="text-4xl text-gray-500 font-roboto">Hello !</h2>
+          <h2
+            className={`text-4xl font-roboto ${
+              isDarkMode ? "text-dark-mode" : "text-gray-500"
+            }`}
+          >
+            Hello !
+          </h2>
           <h1 className="text-4xl font-roboto font-bold pt-2 pb-2">
             Esther Howard
           </h1>
@@ -18,7 +26,7 @@ export default function UserProjects() {
       </Card>
 
       {/* Project card */}
-      <Card className="bg-white shadow-sm rounded-2xl height-[39rem]">
+      <Card className="bg-white shadow-sm rounded-2xl height-[39rem] card">
         <CardHeader className="pb-2">
           <CardTitle className="text-lg font-semibold flex justify-between items-center">
             <span className="font-roboto tracking-wide">
