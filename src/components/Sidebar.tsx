@@ -165,6 +165,18 @@ export default function Sidebar() {
           Un problème ?
         </a>
       </div>
+
+      {/* Signature Section */}
+      <div>
+        <a
+          href="https://github.com/GuiFraV"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sm text-[#5d6c80] underline decoration-solid hover:text-white"
+        >
+          Made by GuiFraV
+        </a>
+      </div>
     </div>
   );
 }
