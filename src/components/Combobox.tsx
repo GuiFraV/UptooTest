@@ -55,7 +55,7 @@ export function ComboboxComponent() {
           variant="default"
           role="combobox"
           aria-expanded={open}
-          className="w-full bg-[#3e424f] justify-between"
+          className="w-full bg-[#3e424f] justify-between dark:hover:bg-[#1f2128]"
         >
           <Image width={40} height={40} src={Tacos} alt="emoticone tacos" />
           <span className="combobox-text">

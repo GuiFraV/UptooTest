@@ -8,7 +8,7 @@ export default function Home() {
     <div className="flex bg-[#28292e] ">
       <Sidebar />
       <div
-        className={`flex-1 rounded-tl-[40px] bg-[#28292e] ${
+        className={`flex-1 rounded-tl-[40px] bg-[#28292e] bg-opacity-100 ${
           isDarkMode ? "bg-dark-background" : "bg-[#f6f7f9] "
         }`}
       >

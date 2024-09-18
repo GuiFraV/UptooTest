@@ -28,7 +28,16 @@ export default function Sidebar() {
     { name: "Mon Hub", icon: <FaRegCircle />, href: "#" },
     { name: "Mon équipe", icon: <FiUsers />, href: "#" },
     { name: "Agenda", icon: <FiCalendar />, href: "#" },
-    { name: "Notifications", icon: <FiBell />, href: "#" },
+    {
+      name: "Notifications",
+      icon: (
+        <div className="relative">
+          <FiBell />
+          <span className="absolute top-0 right-0 block h-1.5 w-1.5 rounded-full bg-red-500"></span>
+        </div>
+      ),
+      href: "#",
+    },
     { name: "Ressources", icon: <FiFileText />, href: "#" },
   ];
 

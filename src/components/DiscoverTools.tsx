@@ -37,16 +37,17 @@ export default function DiscoverTools() {
               </div>
               <h3 className="text-2xl font-bold mb-2">{tool.title}</h3>
               <p className="text-sm mb-6">{tool.description}</p>
-              <Button className="w-full bg-[#096bfa] hover:bg-blue-700 text-white rounded-lg py-3">
+              <Button className="flex justify-center items-center w-full sm:w-32 md:w-full lg:text-sm bg-[#096bfa] hover:bg-blue-700 text-white rounded-lg">
                 Évaluer mes commerciaux
               </Button>
               <div className="absolute -top-5 -right-1 z-10">
                 <Image
                   src={tool.icon}
                   alt={tool.title}
-                  width={190}
-                  height={190}
-                  className=""
+                  width={100}
+                  height={100}
+                  layout="responsive"
+                  objectFit="contain"
                 />
               </div>
             </CardContent>
